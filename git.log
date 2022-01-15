@@ -1,0 +1,922 @@
+Validating found git in: C:\Program Files\Git\cmd\git.exe
+Using git 2.34.1.windows.1 from C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\Users\jakub\zaliczenie\Zaliczenie-1
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref 'c:\Users\jakub\zaliczenie\Zaliczenie-1\.git\refs\remotes\origin\main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git checkout -q -b interlingwa --no-track HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git checkout -q -b wikipedia --no-track HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git push -u origin wikipedia
+remote: 
+remote: Create a pull request for 'wikipedia' on GitHub by visiting:        
+remote:      https://github.com/gax32994/Zaliczenie/pull/new/wikipedia        
+remote: 
+To https://github.com/gax32994/Zaliczenie.git
+ * [new branch]      wikipedia -> wikipedia
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git checkout -q interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git push -u origin interlingwa
+remote: 
+remote: Create a pull request for 'interlingwa' on GitHub by visiting:        
+remote:      https://github.com/gax32994/Zaliczenie/pull/new/interlingwa        
+remote: 
+To https://github.com/gax32994/Zaliczenie.git
+ * [new branch]      interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :README.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git cat-file -s 469fdc54bced5e1992e0cb2265e054a276d51c5b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git for-each-ref --format %(refname:short)%00%(upstream:short) refs/heads
+> git checkout -q wikipedia
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git log --oneline --cherry wikipedia...wikipedia@{upstream} --
+> git status -z -u
+> git pull --tags origin wikipedia
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+From https://github.com/gax32994/Zaliczenie
+ * branch            wikipedia  -> FETCH_HEAD
+> git push origin wikipedia:wikipedia
+To https://github.com/gax32994/Zaliczenie.git
+   2e04d55..98a625a  wikipedia -> wikipedia
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git for-each-ref --format %(refname:short)%00%(upstream:short) refs/heads
+> git checkout -q interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.gitignore
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\.gitignore
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git status -z -u
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git symbolic-ref --short HEAD
+> git pull --tags origin interlingwa
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+To https://github.com/gax32994/Zaliczenie.git
+   2e04d55..1c2d04a  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Interlingwa.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 0637c1e4a36366a9a3598184b7aac1fca164e48a
+> git show --textconv :Interlingwa.md
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 0637c1e4a36366a9a3598184b7aac1fca164e48a
+> git show --textconv :Interlingwa.md
+To https://github.com/gax32994/Zaliczenie.git
+   1c2d04a..ec7f975  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 0637c1e4a36366a9a3598184b7aac1fca164e48a
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s a0618ef24d0ac7f4653515deab7ba251a0fe902f
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git pull --tags origin interlingwa
+> git config --get commit.template
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s a0618ef24d0ac7f4653515deab7ba251a0fe902f
+> git show --textconv :Interlingwa.md
+To https://github.com/gax32994/Zaliczenie.git
+   ec7f975..471319d  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s a0618ef24d0ac7f4653515deab7ba251a0fe902f
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 685aa66b42d567e53e180800596fd8844b19da01
+> git show --textconv :Interlingwa.md
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 685aa66b42d567e53e180800596fd8844b19da01
+> git show --textconv :Interlingwa.md
+To https://github.com/gax32994/Zaliczenie.git
+   471319d..ce2b03b  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 685aa66b42d567e53e180800596fd8844b19da01
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 947aedbc27afec7aea185d32204b2b461579006f
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git show --textconv :Interlingwa.md
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 947aedbc27afec7aea185d32204b2b461579006f
+> git show --textconv :Interlingwa.md
+To https://github.com/gax32994/Zaliczenie.git
+   ce2b03b..51dbaba  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 947aedbc27afec7aea185d32204b2b461579006f
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git tag -a v1.0- -m interlingua
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 947aedbc27afec7aea185d32204b2b461579006f
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+To https://github.com/gax32994/Zaliczenie.git
+   51dbaba..e055d66  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git tag -a v0.1 -m interlingua
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git rev-list --count ec7f97542dc786887ca48eac0ca11b19e34b193d.. -- c:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n6 -- c:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git checkout -q main
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref 'c:\Users\jakub\zaliczenie\Zaliczenie-1\.git\refs\remotes\origin\main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref 'c:\Users\jakub\zaliczenie\Zaliczenie-1\.git\refs\remotes\origin\main', is most likely packed.
+> git config --get commit.template
+> git log --oneline --cherry main...main@{upstream} --
+> git pull --tags origin main
+From https://github.com/gax32994/Zaliczenie
+ * branch            main       -> FETCH_HEAD
+   2e04d55..decff12  main       -> origin/main
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Interlingwa.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git for-each-ref --format %(refname:short)%00%(upstream:short) refs/heads
+> git checkout -q wikipedia
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry wikipedia...wikipedia@{upstream} --
+> git pull --tags origin wikipedia
+From https://github.com/gax32994/Zaliczenie
+ * branch            wikipedia  -> FETCH_HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Wikipedia_Day.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wikipedia_Day.md
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wikipedia_Day.md
+> git cat-file -s f65df6f4d3afd20914dc327e1bed99cb85102f8d
+> git show --textconv :Wikipedia_Day.md
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\jakub\zaliczenie\Zaliczenie-1\Wikipedia_Day.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Wkipedia_Day_Events.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wkipedia_Day_Events.md
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wkipedia_Day_Events.md
+> git cat-file -s 4573a07f7c99ab0cd9579de81570ad9833403d81
+> git show --textconv :Wkipedia_Day_Events.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry wikipedia...wikipedia@{upstream} --
+> git pull --tags origin wikipedia
+From https://github.com/gax32994/Zaliczenie
+ * branch            wikipedia  -> FETCH_HEAD
+> git push origin wikipedia:wikipedia
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wkipedia_Day_Events.md
+> git cat-file -s 4573a07f7c99ab0cd9579de81570ad9833403d81
+> git show --textconv :Wkipedia_Day_Events.md
+To https://github.com/gax32994/Zaliczenie.git
+   98a625a..6c717cd  wikipedia -> wikipedia
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wkipedia_Day_Events.md
+> git cat-file -s 4573a07f7c99ab0cd9579de81570ad9833403d81
+> git show --textconv :Wkipedia_Day_Events.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git tag -a -v1.1 -m Wiki
+error: unknown switch `1'
+usage: git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>]
+               <tagname> [<head>]
+   or: git tag -d <tagname>...
+   or: git tag -l [-n[<num>]] [--contains <commit>] [--no-contains <commit>] [--points-at <object>]
+               [--format=<format>] [--merged <commit>] [--no-merged <commit>] [<pattern>...]
+   or: git tag -v [--format=<format>] <tagname>...
+
+    -l, --list            list tag names
+    -n[<n>]               print <n> lines of each tag message
+    -d, --delete          delete tags
+    -v, --verify          verify tags
+
+Tag creation options
+    -a, --annotate        annotated tag, needs a message
+    -m, --message <message>
+                          tag message
+    -F, --file <file>     read message from file
+    -e, --edit            force edit of tag message
+    -s, --sign            annotated and GPG-signed tag
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -u, --local-user <key-id>
+                          use another key to sign the tag
+    -f, --force           replace the tag if exists
+    --create-reflog       create a reflog
+
+Tag listing options
+    --column[=<style>]    show tag list in columns
+    --contains <commit>   print only tags that contain the commit
+    --no-contains <commit>
+                          print only tags that don't contain the commit
+    --merged <commit>     print only tags that are merged
+    --no-merged <commit>  print only tags that are not merged
+    --sort <key>          field name to sort on
+    --points-at <object>  print only tags of the object
+    --format <format>     format to use for the output
+    --color[=<when>]      respect format colors
+    -i, --ignore-case     sorting and filtering are case insensitive
+> git show --textconv :Wikipedia_Day.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Wikipedia_Day.md
+> git cat-file -s f65df6f4d3afd20914dc327e1bed99cb85102f8d
+> git tag -a v-1.1 -m Wiki
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/wikipedia refs/remotes/wikipedia
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git for-each-ref --format %(refname:short)%00%(upstream:short) refs/heads
+> git checkout -q interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Interlingwa.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git add -A -- .
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s d2020596047e72c9e6900c9f51f55a4baa096c22
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry interlingwa...interlingwa@{upstream} --
+> git pull --tags origin interlingwa
+From https://github.com/gax32994/Zaliczenie
+ * branch            interlingwa -> FETCH_HEAD
+> git push origin interlingwa:interlingwa
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s d2020596047e72c9e6900c9f51f55a4baa096c22
+> git show --textconv :Interlingwa.md
+To https://github.com/gax32994/Zaliczenie.git
+   e055d66..d30934e  interlingwa -> interlingwa
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s d2020596047e72c9e6900c9f51f55a4baa096c22
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/interlingwa refs/remotes/interlingwa
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git for-each-ref --format %(refname:short)%00%(upstream:short) refs/heads
+> git checkout -q main
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git log --oneline --cherry main...main@{upstream} --
+> git pull --tags origin main
+From https://github.com/gax32994/Zaliczenie
+ * branch            main       -> FETCH_HEAD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --oneline --cherry main...main@{upstream} --
+> git pull --tags origin main
+From https://github.com/gax32994/Zaliczenie
+ * branch            main       -> FETCH_HEAD
+   decff12..c6b5cbe  main       -> origin/main
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\Interlingwa.md
+> git cat-file -s 344dc72121bcfef08133cba630cd4f95ec862c96
+> git show --textconv :Interlingwa.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :README.md
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+git.stage 1
+git.stage.scmResources 1
+> git add -A -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git cat-file -s 1b2596b2a86ba6e8606a2ba5951d3d4c3854ac96
+> git show --textconv :README.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git cat-file -s 1b2596b2a86ba6e8606a2ba5951d3d4c3854ac96
+> git log --oneline --cherry main...main@{upstream} --
+> git show --textconv :README.md
+> git pull --tags origin main
+From https://github.com/gax32994/Zaliczenie
+ * branch            main       -> FETCH_HEAD
+> git push origin main:main
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git cat-file -s 1b2596b2a86ba6e8606a2ba5951d3d4c3854ac96
+> git show --textconv :README.md
+To https://github.com/gax32994/Zaliczenie.git
+   c6b5cbe..96870bf  main -> main
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- C:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
+> git cat-file -s 1b2596b2a86ba6e8606a2ba5951d3d4c3854ac96
+> git show --textconv :README.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\jakub\zaliczenie\Zaliczenie-1\README.md
